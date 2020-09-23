@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="twitter:card" content="summary">
+  <meta name="og:title" property="og:title" content="Remote Work Ebook written by industry leaders">
+  <meta name="description" content="Remote Work ebook written by industry leaders">
+
+  <title>Capsule Challenge</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/favicon.svg">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light col-12">
+      <div class="container">
+
+        <a class="navbar-brand logo" href="#">
+          <img src="./assets/logo.svg" id="logo" alt="a blue x shaped company logo on a white background" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+          <span class="navbar-toggler-icon"></span>
+  
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+  
+  
+            <ul class="navbar-nav d-flex justify-content-end w-100">
+              <li class=" nav-item">
+                <a class="nav-link" href="#" role="button">Features</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button">Customers</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button">Pricing</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button">About</a>
+              </li>
+  
+              <li class="nav-button">
+                <a class="nav-link blue text-light mt-1" id="TryFree" href="#download" role="button"> Try for Free </a>
+              </li>
+  
+            </ul>
+  
+          
+  
+        </div>
+
+      </div>
+      
+
+    </nav>
+
+  </header>
+
+  <!--ebook section-->
+  <main class="hero container">
+    
+    <div class="row h-100 justify-content-center align-items-center">
+
+      <div class="ebook col-12 col-md-6">
+        <img src="./assets/ebook-cover.svg" id="ebook" alt="Ebook about remote work for marketing teams" />
+      </div>
+
+      <section class="col-12 col-md-6">
+
+        <div class="heroauth">
+
+          <div class="hero-header">
+            <h1 class="hero-title"> Download our wonderful eBook</h1>
+          </div>
+
+          <div class="authors row col-12">
+
+            <p> By <span><img src="./assets/katia.jpg" class="authors-img"
+                  alt="an image of Katia, our team member"></span>
+              Katia DeJuan </p>
+
+            <p><span><img src="./assets/gavin.jpg" class="authors-img" alt="an image of Gavin, our team member"></span>
+              Gavin Williams </p>
+
+          </div>
+
+          <div class="mobileEbook">
+            <img src="./assets/ebook-cover.png" class="ebookSize" alt="Ebook about remote work for marketing teams" />
+          </div>
+
+        </div>
+        <!--end of heroauth-->
+
+        <article class="hero-content px-2 px-md-0">
+
+          <p class="hero-text">
+            Learn how design engineering, an essential discipline to creating great products, brings togehter form and
+            function while accelerating innovation.
+            Written by industry leaders from Indeed, Mailchip, The New York Times, and minted, this book will help you
+            connect design and engineering and work
+            more efficiently as a team.
+          </p>
+
+          <p>
+            <em> Available in epub, PDF, and audiobook formats.</em>
+          </p>
+
+        </article>
+
+        <div class="hero-footer">
+
+          <button type="button" id="download" class="btn blue hero-button text-light" data-target="#ebook-modal"
+            data-toggle="modal"> Download eBook
+          </button>
+
+        </div>
+
+      </section>
+      <!--end of content column -->
+    </div>
+    <!--end of main row-->
+  </main>
+  <!--end of ebook section-->
+
+
+  <!--ebook modal-->
+  <div class="modal fade" id="ebook-modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop='static'
+    data-keyboard='false'>
+
+    <div class="modal-dialog modal-dialog-centered custom-modal" role="document">
+      <div class="modal-content custom-content">
+        <div class="modal-header border-0">
+
+          <button type="button" class="close border-0" data-dismiss="modal" aria-label="Close">
+
+            <span aria-hidden="true">&times;</span>
+
+          </button>
+
+        </div>
+        <div class="modal-body px-1 px-md-4">
+
+          <form id='ebook-form'>
+            <div class="form-group form-intro">
+              <h3>We need some details...</h3>
+              <p> Tell us a little about yourself to download the free e-book! Don't worry, we never share these details
+                with anyone else. </p>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <label>First name: </label>
+                  <input class="form-control" id="firstname" type="text" placeholder="Bob" required>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label> Last Name: </label>
+                  <input class="form-control" id="lastname" type="text" placeholder="Burgers" required>
+                </div>
+
+                <div class="col-12 pt-1">
+                  <label> Email Address </label>
+                  <input class="form-control" id="email" type="email" placeholder="bob@burgers.com" required>
+                </div>
+
+                <div class="row form-footer col-12 mt-1">
+                  <input type="submit" id="submit" class="btn blue text-light" value="Submit">
+                  <p id="output"></p>
+                </div>
+
+              </div>
+              <!--end of modal row-->
+            </div>
+            <!--end of form group -->
+          </form>
+
+        </div>
+        <!--end of modal body -->
+
+      </div>
+      <!--end of modal content -->
+    </div>
+  </div>
+  <!--end of modal -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
